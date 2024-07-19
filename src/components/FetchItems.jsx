@@ -8,7 +8,7 @@ const FetchItems = () => {
     const dispatch = useDispatch()
     const loadData = async () => {
         try{
-            const res = await fetch("http://localhost:5000/api/auth/products");
+            const res = await fetch("https://myntra-clone-api-steel.vercel.app/api/auth/products");
             const data = await res.json();
             console.log(data);
             console.log(res)
